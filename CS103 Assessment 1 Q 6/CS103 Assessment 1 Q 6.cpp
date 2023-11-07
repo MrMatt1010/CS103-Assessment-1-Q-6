@@ -49,7 +49,7 @@ void viewDailyExpenses(const dailyExpenses& expenses) {
 
 int main()
 {
-    const int maxDays = 7;
+    const int maxDays = 3;
     dailyExpenses dailyExpenses[maxDays];
     double weeklyExpenses = 0;
 
