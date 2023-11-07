@@ -49,6 +49,16 @@ void viewDailyExpenses(const dailyExpenses& expenses) {
 
 int main()
 {
-    
+    const int maxDays = 7;
+    dailyExpenses dailyExpenses[maxDays];
+    double weeklyExpenses = 0;
+
+    for (int i = 0; i < maxDays; i++) {
+        cout << "Enter expenses for the day " << (i + 1) << endl;
+        inputDailyExpenses(dailyExpenses[i]);
+        weeklyExpenses += calaulateDailyExpenses(dailyExpenses[i]);
+    }
+
+
 }
 
