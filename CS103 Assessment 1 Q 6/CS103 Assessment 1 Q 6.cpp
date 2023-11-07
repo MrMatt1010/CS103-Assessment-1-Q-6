@@ -58,13 +58,13 @@ int main()
         inputDailyExpenses(dailyExpenses[i]);
         weeklyExpenses += calaulateDailyExpenses(dailyExpenses[i]);
     }
-
+// Displays the daily expenses
     cout << "\n--- Daily Expense Report ---\n";
     for (int i = 0; i < maxDays; i++) {
         cout << "\nDay" << (i + 1) << " Expenses:\n";
         viewDailyExpenses(dailyExpenses[i]);
     }
-
+// Displays the weekly expenses
     cout << "\n--- Weekly Expense Report ---\n";
     cout << "Total Weekly Expenses: $" << weeklyExpenses << endl;
 
