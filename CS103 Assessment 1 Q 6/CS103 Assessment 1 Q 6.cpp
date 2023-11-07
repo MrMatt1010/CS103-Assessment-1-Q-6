@@ -22,6 +22,22 @@ double calaulateDailyExpenses(const dailyExpenses& expenses) {
 }
 
 
+// Function to input daily expenses
+void inputDailyExpenses(dailyExpenses& expenses) {
+    cout << "Enter the date: ";
+    cin >> expenses.date;
+    cout << "Enter transport cost: $";
+    cin >> expenses.transportCost;
+    cout << "Enter meal cost: $";
+    cin >> expenses.mealCost;
+    cout << "Enter Entertainment cost: $";
+    cin >> expenses.entertainmentCost;
+    cout << "Enter other expenses cost: $";
+    cin >> expenses.otherCost;
+}
+
+
+
 int main()
 {
     
