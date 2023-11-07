@@ -36,7 +36,16 @@ void inputDailyExpenses(dailyExpenses& expenses) {
     cin >> expenses.otherCost;
 }
 
-
+// Function to calculate and display the daily expenses
+void viewDailyExpenses(const dailyExpenses& expenses) {
+    double totalDailyExpenses = calaulateDailyExpenses(expenses);
+    cout << "Date: " << expenses.date << endl;
+    cout << "Transport Cost: $" << expenses.transportCost << endl;
+    cout << "Meal Cost: $" << expenses.mealCost << endl;
+    cout << "Entertainment Cost: $" << expenses.entertainmentCost << endl;
+    cout << "Other Expenses: $" << expenses.otherCost << endl;
+    cout << "Total Daily Expenses: $" << totalDailyExpenses << endl;
+}
 
 int main()
 {
